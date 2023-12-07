@@ -1,0 +1,49 @@
+.arevage-container {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+}
+.arevage-container .arevage-block {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid rgb(189, 187, 187);
+  border-radius: 15px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.arevage-container .arevage-block .arevage-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.arevage-container .arevage-block .arevage-title h3 {
+  color: gray;
+}
+.arevage-container .arevage-block .counter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.arevage-container .arevage-block .counter p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.arevage-container .sales-arevage .arevage-icon {
+  height: 50px;
+  width: 50px;
+  background-color: aquamarine;
+  border-radius: 50%;
+}
+.arevage-container .orders-arevage .arevage-icon {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(242, 91, 91);
+  border-radius: 50%;
+}
+.arevage-container .revenue-arevage .arevage-icon {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(92, 92, 252);
+  border-radius: 50%;
+}/*# sourceMappingURL=arevage.css.map */

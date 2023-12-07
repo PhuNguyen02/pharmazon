@@ -1,0 +1,165 @@
+.recent-orders{
+    margin-top: 2rem;
+    padding: 0 100px;
+   
+   .view{
+       display: flex;
+       justify-content: space-between;
+       width: 100%;
+       text-align: center;
+       margin-bottom: 50px;
+       &:hover{
+           box-shadow: none;
+           transition: all 300ms ease;
+       }
+       .card-body{
+           background-color: white;
+       border-radius: 15px;
+       padding: 20px;
+       text-align: center;
+       box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+       transition: all 300ms ease;
+       }
+       .card-body-left{
+           width: 35%;
+           padding: 20px 50px;
+
+           .head-card{
+               display: flex;
+               
+               .avatar{
+                   margin-right: 20px;
+                   img{
+                       width: 50px;
+                       height: 50px;
+                       border: 1px solid black;
+                       border-radius: 5px;
+                   }
+               }
+               .name{
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: center;
+                   nav{
+                       font-weight: 600;
+                   }
+               }
+           }
+           .info-user{
+               margin-top: 23px;
+               
+               div{
+                   display: flex;
+                   margin-bottom: 10px;
+                   justify-content: space-between;
+                   .col1{
+                       
+                   }
+                   .col2{
+                       color: #7d8da1;
+                   }
+               }
+           }
+           .action{
+               margin-top: 50px;
+               text-align: start;
+               a{
+                   width: 100%;
+                   nav{
+                       margin-top: 20px;
+                       font-size: 16px;
+                       font-weight: 500;
+                       height: 50px;
+                       display: flex;
+                       flex-direction: column;
+                       justify-content: center;
+                       transition: all 300ms ease;
+                        color: black;
+               font-weight: 600;
+
+                   }
+                   &:hover nav{
+                       color: #3699FF;
+                       border-radius: 5px;
+                       background-color: #a8abae75;
+                   }
+               }
+           }
+       }
+       .card-body-right{
+           width: 50%;
+           padding: 20px 80px;
+           .header-carbody-right{
+               
+               border-bottom: 1px solid black;
+               nav{
+                   font-size: 20px;
+                   font-weight: 600;
+                   text-align: start;
+                   padding: 10px 20px;
+               }
+           }
+           div{
+               display: flex;
+               margin-bottom: 50px;
+               .col1{
+                   font-size: 15px;
+                   width: 40%;
+                   display: flex;
+                   align-items: center;
+               }
+               .col2{
+                   width: 60%;
+                   display: flex;
+                   align-items: flex-start;
+                   
+                   a{
+                       color: #3699FF;
+                   }
+                   img{
+                       width: 80px;
+                       border: 3px solid black;
+                   }
+                   input{
+                       border-radius: 5px;
+                       padding: 10px 25px;
+                       width: 100%;
+                       background-color: #c8d6dd4a;
+                   }
+               }
+               
+           }
+           .button{
+               display: flex;
+               justify-content: space-between;
+                   button{
+                       cursor: pointer;
+                       padding: 10px 20px;
+                       border-radius: 5px;
+                       background-color: #7380ec;
+                       font-weight: 600;
+                       transition: all 300ms ease;
+                       &:hover{
+                           background-color: #3e4fe8;
+                           color: white;
+                       }
+                   }
+               
+           }
+           
+       }
+       .button{
+           button{
+               padding: 10px;
+               border: 1px solid black;
+               cursor: pointer;
+               background-color: #06875c;
+               color: white;
+               font-weight: 600;
+               &:hover{
+                   background-color: #024d34;
+               }
+           }
+       }
+   }
+}

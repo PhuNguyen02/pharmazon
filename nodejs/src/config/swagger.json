@@ -1,0 +1,15 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Test API ",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "host": "localhost:8000/api",
+  "basePath": "/",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "paths": {}
+}

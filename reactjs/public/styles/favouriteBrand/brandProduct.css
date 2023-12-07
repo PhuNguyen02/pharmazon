@@ -1,0 +1,33 @@
+.body-container .wrapper .product-list-container .brand-container .brand-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr !important;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.body-container .wrapper .product-list-container .brand-container .brand-body .favourite-brand-card {
+  border: 1px solid blue;
+  border-radius: 25px;
+  padding: 10px;
+  margin-right: 10px;
+  height: 300px;
+  margin-top: 20px;
+}
+.body-container .wrapper .product-list-container .brand-container .brand-body .favourite-brand-card a .brand-product {
+  display: flex;
+  justify-content: center;
+}
+.body-container .wrapper .product-list-container .brand-container .brand-body .favourite-brand-card a .brand-product img {
+  width: 160px !important;
+  height: 160px !important;
+}
+.body-container .wrapper .product-list-container .brand-container .brand-body .favourite-brand-card a .content {
+  width: 100%;
+}
+.body-container .wrapper .product-list-container .brand-container .brand-body .favourite-brand-card a .content p {
+  color: black;
+}
+
+.slick-track {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=brandProduct.css.map */

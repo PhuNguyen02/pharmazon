@@ -1,0 +1,118 @@
+header {
+  height: 150px;
+  background-image: url("/assets/img/bg-header-desktop.png");
+  background-size: 100% 100%;
+}
+header .header-heading {
+  height: 50px;
+  border-bottom: 1px solid gray;
+}
+header .header-wrapper {
+  position: relative;
+  padding: 10px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-wrapper .logo {
+  width: 10%;
+}
+header .header-wrapper .logo img {
+  height: 30px;
+  filter: invert(100%);
+}
+header .header-wrapper .search {
+  width: 60%;
+  border: 1px solid transparent;
+  border-radius: 35px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+header .header-wrapper .search input {
+  background-color: transparent;
+  font-size: 18px;
+  width: 100%;
+  padding-left: 10px;
+}
+header .header-wrapper .search i {
+  cursor: pointer;
+  background-color: rgb(11, 160, 240);
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+}
+header .header-wrapper .right-side {
+  width: 20%;
+  display: flex;
+  justify-content: end;
+}
+header .header-wrapper .right-side .login {
+  font-size: 18px;
+  padding: 10px 0;
+}
+header .header-wrapper .right-side .login i {
+  color: white;
+}
+header .header-wrapper .right-side .login a {
+  color: white;
+}
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar:hover .logout {
+  transform: scale(1);
+  transition: 0.1s ease-out ;
+}
+.avatar img {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  filter: brightness(0);
+}
+.avatar .logout {
+  transform: scale(0);
+  position: absolute;
+  bottom: -30px;
+  border: 1px solid gray;
+}
+.logout {
+  background: white;
+  width: 160px;
+  padding: 5px 10px;
+}
+.logout a {
+  color: black;
+}.logout a {
+  color: black;
+  margin-bottom: 5px;
+}
+.avatar {
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+.avatar span {
+  margin-left: 5px;
+}
+header .header-wrapper .right-side .cart {
+  margin-left: 20px;
+  font-size: 18px;
+  background-color: rgb(12, 71, 187);
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+header .header-wrapper .right-side .cart i {
+  color: white;
+}
+header .header-wrapper .right-side .cart a {
+  color: white;
+}
+header .header-foot {
+  height: 50px;
+}/*# sourceMappingURL=header.css.map */

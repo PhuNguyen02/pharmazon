@@ -1,0 +1,3 @@
+INSERT INTO USER ( NAME, age, gender )
+VALUES
+	( 'NGUYEN VAN A', 16, 0 );

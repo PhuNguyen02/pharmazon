@@ -1,0 +1,150 @@
+.recent-orders {
+  margin-top: 2rem;
+  padding: 0 100px;
+}
+.recent-orders .view {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.recent-orders .view:hover {
+  box-shadow: none;
+  transition: all 300ms ease;
+}
+.recent-orders .view .card-body {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+  transition: all 300ms ease;
+}
+.recent-orders .view .card-body-left {
+  width: 35%;
+  padding: 20px 50px;
+}
+.recent-orders .view .card-body-left .head-card {
+  display: flex;
+}
+.recent-orders .view .card-body-left .head-card .avatar {
+  margin-right: 20px;
+}
+.recent-orders .view .card-body-left .head-card .avatar img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.recent-orders .view .card-body-left .head-card .name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.recent-orders .view .card-body-left .head-card .name nav {
+  font-weight: 600;
+}
+.recent-orders .view .card-body-left .info-user {
+  margin-top: 23px;
+}
+.recent-orders .view .card-body-left .info-user div {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+.recent-orders .view .card-body-left .info-user div .col2 {
+  color: #7d8da1;
+}
+.recent-orders .view .card-body-left .action {
+  margin-top: 50px;
+  text-align: start;
+}
+.recent-orders .view .card-body-left .action a {
+  width: 100%;
+}
+.recent-orders .view .card-body-left .action a nav {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 300ms ease;
+  color: black;
+  font-weight: 600;
+}
+.recent-orders .view .card-body-left .action a:hover nav {
+  color: #3699FF;
+  border-radius: 5px;
+  background-color: rgba(168, 171, 174, 0.4588235294);
+}
+.recent-orders .view .card-body-right {
+  width: 50%;
+  padding: 20px 80px;
+}
+.recent-orders .view .card-body-right .header-carbody-right {
+  border-bottom: 1px solid black;
+}
+.recent-orders .view .card-body-right .header-carbody-right nav {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: start;
+  padding: 10px 20px;
+}
+.recent-orders .view .card-body-right div {
+  display: flex;
+  margin-bottom: 50px;
+}
+.recent-orders .view .card-body-right div .col1 {
+  font-size: 15px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.recent-orders .view .card-body-right div .col2 {
+  width: 60%;
+  display: flex;
+  align-items: flex-start;
+}
+.recent-orders .view .card-body-right div .col2 a {
+  color: #3699FF;
+}
+.recent-orders .view .card-body-right div .col2 img {
+  width: 80px;
+  border: 3px solid black;
+}
+.recent-orders .view .card-body-right div .col2 input {
+  border-radius: 5px;
+  padding: 10px 25px;
+  width: 100%;
+  background-color: rgba(200, 214, 221, 0.2901960784);
+}
+.recent-orders .view .card-body-right .button {
+  display: flex;
+  justify-content: space-between;
+}
+.recent-orders .view .card-body-right .button button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #7380ec;
+  font-weight: 600;
+  transition: all 300ms ease;
+}
+.recent-orders .view .card-body-right .button button:hover {
+  background-color: #3e4fe8;
+  color: white;
+}
+.recent-orders .view .button button {
+  padding: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: #06875c;
+  color: white;
+  font-weight: 600;
+}
+.recent-orders .view .button button:hover {
+  background-color: #024d34;
+}/*# sourceMappingURL=editaccont.css.map */

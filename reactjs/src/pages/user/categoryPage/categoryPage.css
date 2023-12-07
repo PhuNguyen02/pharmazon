@@ -1,0 +1,49 @@
+.container .productOfCategory {
+  padding: 30px;
+}
+.container .productOfCategory .product-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.container .productOfCategory .product-list .product-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+}
+.container .productOfCategory .product-list .product-card a img {
+  width: 138px;
+  height: 138px;
+  margin-bottom: 30px;
+}
+.container .productOfCategory .product-list .product-card .product-content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.container .productOfCategory .product-list .product-card .product-content .name-product {
+  margin-bottom: 10px;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container .productOfCategory .product-list .product-card .product-content .name-product a {
+  color: black;
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 14px;
+}
+.container .productOfCategory .product-list .product-card .product-price {
+  margin-bottom: 5px;
+}
+.container .productOfCategory .product-list .product-card .product-price span {
+  color: #1285dc;
+  font-weight: 600;
+  font-size: 20px;
+}/*# sourceMappingURL=categoryPage.css.map */

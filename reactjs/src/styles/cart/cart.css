@@ -1,0 +1,101 @@
+body {
+  background: #eee;
+}
+
+.container {
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .cart-wrapper {
+  width: 60%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 50px;
+}
+.container .cart-wrapper .list-cart {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.container .cart-wrapper .list-cart a.cart-item {
+  margin-right: 20px;
+}
+.container .cart-wrapper .list-cart a.cart-item img {
+  height: 50px;
+  width: 50px;
+}
+.container .cart-wrapper .list-cart .cart-body {
+  width: 70%;
+}
+.container .cart-wrapper .list-cart .cart-body .cart-selector {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .cart-wrapper .list-cart .cart-body .cart-selector h3.product-title {
+  width: 100%;
+}
+.container .cart-wrapper .list-cart .cart-body .cart-selector .price {
+  width: 20%;
+  margin-right: 20px;
+}
+.container .cart-wrapper .list-cart .cart-body .cart-selector .quantity {
+  width: 20%;
+  margin-right: 20px;
+}
+.container .cart-wrapper .list-cart .cart-body .cart-selector .quantity input {
+  border: 1px solid black;
+  width: 50px;
+  padding: 5px;
+}
+.container .cart-wrapper .list-cart .cart-body .cart-selector button {
+  background: transparent;
+  width: 10%;
+  cursor: pointer;
+}
+.container .cart-wrapper .list-cart .cart-body .cart-selector button i {
+  color: red;
+}
+.container .payment-product {
+  background: white;
+  border-radius: 15px;
+  width: 30%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.container .payment-product .cart-total-title {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+  background-color: rgb(212, 209, 209);
+  padding: 10px 0;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.container .payment-product .price-item {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(212, 209, 209);
+}
+.container .payment-product .pay-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.container .payment-product .pay-btn button {
+  padding: 15px 25px;
+  border-radius: 50px;
+  background-color: #306de4;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}/*# sourceMappingURL=cart.css.map */

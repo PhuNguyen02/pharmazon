@@ -1,0 +1,21 @@
+.menu-bar ul {
+    display: flex;
+    justify-content: center;
+  }
+  .menu-bar ul li {
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+  }
+  .menu-bar ul li a {
+    color: black;
+    font-size: 20px;
+    display: block;
+  }
+  .menu-bar ul li:hover {
+    background-color: #f0fbff;
+    border-color: #1250dc;
+    color: #1250dc;
+  }/*# sourceMappingURL=test.css.map */

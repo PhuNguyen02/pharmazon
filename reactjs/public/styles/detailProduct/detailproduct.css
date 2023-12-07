@@ -1,0 +1,347 @@
+body {
+  background: #eee;
+}
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+.container {
+  padding: 20px 100px;
+}
+.container .detail-infomation {
+  border-radius: 15px;
+  background: white;
+  display: flex;
+  flex-direction: row;
+}
+.container .detail-infomation .detail-infomatio-left {
+  padding: 50px;
+  width: 40%;
+}
+.container .detail-infomation .detail-infomatio-left .img-info-container {
+  display: flex;
+  justify-content: center;
+  width: 425px;
+  position: relative;
+}
+.container .detail-infomation .detail-infomatio-left .img-info-container .carasel-gallery {
+  overflow: hidden;
+  width: 100%;
+}
+.container .detail-infomation .detail-infomatio-left .img-info-container .carasel-gallery:hover .button-area > .previous-btn {
+  margin-left: 10px;
+}
+.container .detail-infomation .detail-infomatio-left .img-info-container .carasel-gallery:hover .button-area > .next-btn {
+  margin-right: 10px;
+}
+.container .detail-infomation .detail-infomatio-left .img-info-container .carasel-gallery .slider-gallery-area {
+  width: 425px;
+  position: relative;
+  display: flex;
+}
+.container .detail-infomation .detail-infomatio-left .img-info-container .carasel-gallery .button-area {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.container .detail-infomation .detail-infomatio-left .img-info-container .carasel-gallery .button-area .previous-btn {
+  color: black;
+  cursor: pointer;
+  margin-left: -50px;
+  transition: 0.3s ease-in-out;
+}
+.container .detail-infomation .detail-infomatio-left .img-info-container .carasel-gallery .button-area .previous-btn i {
+  font-size: 50px;
+}
+.container .detail-infomation .detail-infomatio-left .img-info-container .carasel-gallery .button-area .next-btn {
+  color: black;
+  cursor: pointer;
+  margin-right: -50px;
+  transition: 0.3s ease-in-out;
+}
+.container .detail-infomation .detail-infomatio-left .img-info-container .carasel-gallery .button-area .next-btn i {
+  font-size: 50px;
+}
+.container .detail-infomation .detail-infomation-right {
+  width: 60%;
+  padding: 50px 0;
+}
+.container .detail-infomation .detail-infomation-right .brand-name {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.container .detail-infomation .detail-infomation-right .brand-name span a {
+  color: rgb(0, 145, 255);
+}
+.container .detail-infomation .detail-infomation-right .product-price {
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(0, 72, 255);
+  margin-bottom: 20px;
+}
+.container .detail-infomation .detail-infomation-right .product-name {
+  margin-bottom: 20px;
+}
+.container .detail-infomation .detail-infomation-right .product-name span h3 {
+  font-weight: 600;
+  font-size: 30px;
+}
+.container .detail-infomation .detail-infomation-right table.content-list {
+  font-size: 20px;
+}
+.container .detail-infomation .detail-infomation-right table.content-list tr {
+  height: 50px;
+}
+.container .detail-infomation .detail-infomation-right table.content-list tr td:first-child {
+  width: 140px;
+}
+.container .detail-infomation .detail-infomation-right table.content-list tr.unit td p {
+  cursor: pointer;
+  border: 2px solid blue;
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 50px;
+  color: blue;
+  font-weight: 550;
+}
+.container .detail-infomation .detail-infomation-right table.content-list tr.category td a {
+  color: rgb(0, 145, 255);
+}
+.container .detail-infomation .detail-infomation-right .addToCart {
+  margin: 20px 0;
+}
+.container .detail-infomation .detail-infomation-right .addToCart .quantityToCart {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.container .detail-infomation .detail-infomation-right .addToCart .quantityToCart span {
+  font-size: 20px;
+  margin-right: 20px;
+  color: #4a4f63;
+}
+.container .detail-infomation .detail-infomation-right .addToCart .quantityToCart .quantityInput {
+  margin-right: 20px;
+}
+.container .detail-infomation .detail-infomation-right .addToCart .quantityToCart .quantityInput input {
+  border: 1px solid black;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+}
+.container .detail-infomation .detail-infomation-right .button-addtocart-Area {
+  display: flex;
+  justify-content: space-between;
+}
+.container .detail-infomation .detail-infomation-right .button-addtocart-Area button {
+  cursor: pointer;
+  width: 90%;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 50px;
+}
+.container .detail-infomation .detail-infomation-right .button-addtocart-Area .btn-addToCart {
+  width: 50%;
+}
+.container .detail-infomation .detail-infomation-right .button-addtocart-Area .btn-addToCart button {
+  background-color: rgb(0, 106, 255);
+  color: white;
+}
+.container .detail-infomation .detail-infomation-right .button-addtocart-Area .btn-placePharmacist {
+  width: 50%;
+}
+.container .detail-infomation .detail-infomation-right .button-addtocart-Area .btn-placePharmacist button {
+  background-color: #eaeffa;
+  color: rgb(0, 106, 255);
+}
+.container .pharmacist-infomation {
+  margin-top: 50px;
+  padding: 50px;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+}
+.container .pharmacist-infomation .pharmacist-area {
+  display: flex;
+  width: 50%;
+  height: 80px;
+  border-right: 1px solid #cecece;
+}
+.container .pharmacist-infomation .pharmacist-area .pharmacist-avarta {
+  margin-right: 20px;
+}
+.container .pharmacist-infomation .pharmacist-area .pharmacist-avarta img {
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.container .pharmacist-infomation .pharmacist-area .pharmacist-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .pharmacist-infomation .pharmacist-area .pharmacist-info .pharmacist-name span {
+  font-size: 18px;
+  font-weight: 550;
+}
+.container .pharmacist-infomation .pharmacist-area .pharmacist-info .btn-action-pharmacist button {
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgb(0, 106, 255);
+  color: white;
+}
+.container .pharmacist-infomation .pharmacist-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80px;
+  font-size: 18px;
+  margin-left: 30px;
+}
+.container .pharmacist-infomation .pharmacist-description .drugStore-description {
+  display: flex;
+  justify-content: space-between;
+}
+.container .pharmacist-infomation .pharmacist-description .drugStore-description .drugQuantityOfDrugstore a {
+  color: rgb(0, 145, 255);
+}
+.container .pharmacist-infomation .pharmacist-description .drugStore-description .reputation-level a {
+  color: rgb(0, 145, 255);
+}
+.container .pharmacist-infomation .pharmacist-description .drugStore-description .messageResponse-rate a {
+  color: rgb(0, 145, 255);
+}
+.container .product-description {
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 50px;
+}
+.container .product-description .heading-description {
+  margin-bottom: 15px;
+}
+.container .product-description .heading-description h3 {
+  font-size: 25px;
+}
+.container .product-description .product-des-content span p {
+  line-height: 35px;
+}
+.container .productReview {
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 50px;
+}
+.container .productReview .productReview-heading {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 15px;
+}
+.container .productReview .productReview-heading h2 {
+  font-size: 25px;
+  margin-right: 10px;
+}
+.container .productReview .productReview-heading span {
+  font-size: 18px;
+  text-align: center;
+}
+.container .productReview form {
+  margin-bottom: 30px;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.container .productReview form .rating {
+  color: #FFBD13;
+  margin-bottom: 15px;
+}
+.container .productReview form .rating i {
+  cursor: pointer;
+  font-size: 30px;
+}
+.container .productReview form .rating .active {
+  opacity: 0;
+  animation: animate 0.5s calc(var(--i) * 0.1s) ease-in-out forwards;
+}
+.container .productReview form textarea {
+  padding: 20px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.container .productReview form .btn-group button {
+  border-radius: 50px;
+  padding: 10px;
+  background-color: rgb(0, 106, 255);
+  color: white;
+}
+.container .productReview .view-rating .filter-review {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+}
+.container .productReview .view-rating .filter-review span {
+  font-size: 18px;
+}
+.container .productReview .view-rating .filter-review .button-filter {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container .productReview .view-rating .filter-review .button-filter button {
+  cursor: pointer;
+  padding: 5px 10px;
+  background: transparent;
+  border: 1px solid gray;
+  border-radius: 50px;
+}
+.container .productReview .view-rating .filter-review .button-filter .active {
+  border-color: rgb(0, 106, 255);
+}
+.container .productReview .view-rating .show-review-comment {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+.container .productReview .view-rating .show-review-comment p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=detailproduct.css.map */

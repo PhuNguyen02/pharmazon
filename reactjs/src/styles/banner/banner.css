@@ -1,0 +1,79 @@
+.banner {
+  width: 800px;
+  height: 95%;
+  position: relative;
+}
+.banner .slider-frame {
+  height: 100%;
+  position: relative;
+}
+.banner .slider-frame:hover .buttons-area > .previous-btn {
+  margin-left: 10px;
+}
+.banner .slider-frame:hover .buttons-area > .next-btn {
+  margin-right: 10px;
+}
+.banner .slider-frame .images-area {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.banner .slider-frame .images-area img {
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  transition: 1s ease-in-out;
+}
+.banner .slider-frame .buttons-area {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.banner .slider-frame .buttons-area .previous-btn {
+  color: white;
+  cursor: pointer;
+  margin-left: -50px;
+  transition: 0.3s ease-in-out;
+}
+.banner .slider-frame .buttons-area .previous-btn i {
+  font-size: 50px;
+}
+.banner .slider-frame .buttons-area .next-btn {
+  color: white;
+  cursor: pointer;
+  margin-right: -50px;
+  transition: 0.3s ease-in-out;
+}
+.banner .slider-frame .buttons-area .next-btn i {
+  font-size: 50px;
+}
+.banner .slider-frame .pagination-area {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.banner .slider-frame .pagination-area span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 5px;
+  transform: scale(0.5);
+  transition: 0.3s ease-in-out;
+  opacity: 0.4;
+}
+.banner .slider-frame .pagination-area .active {
+  transform: scale(1);
+  opacity: 1;
+}/*# sourceMappingURL=banner.css.map */

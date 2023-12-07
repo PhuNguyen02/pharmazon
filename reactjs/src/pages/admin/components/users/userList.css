@@ -1,0 +1,72 @@
+:root {
+  --color-primary: #7380ec;
+  --color-bg-primary: #E9F3FF;
+  --color-danger: #ff7782;
+  --color-bg-danger: #FFEEF3;
+  --color-success: #41f1b6;
+  --color-bg-success: #DFFFEA;
+  --color-warning: #ffbb55;
+  --color-bg-warning: #FFF8DD;
+  --color-background: white;
+  --color-info-dark: #d7dadd;
+  --color-dark-variant: #677483;
+}
+
+.user-table-container {
+  margin-top: 80px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: var(--color-background);
+  width: 100%;
+}
+.user-table-container .user-table-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding: 0 30px;
+}
+.user-table-container .user-table-body .user-table-wrapper table.user-table-data {
+  border-spacing: 0;
+  width: 100%;
+}
+.user-table-container .user-table-body .user-table-wrapper table.user-table-data thead tr th {
+  padding: 15px;
+  text-align: center;
+  color: var(--color-dark-variant);
+}
+.user-table-container .user-table-body .user-table-wrapper table.user-table-data thead tr th:last-child {
+  text-align: right;
+}
+.user-table-container .user-table-body .user-table-wrapper table.user-table-data tbody tr.even td {
+  background-color: var(--color-info-dark);
+}
+.user-table-container .user-table-body .user-table-wrapper table.user-table-data tbody tr td {
+  padding: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+.user-table-container .user-table-body .user-table-wrapper table.user-table-data tbody tr td:last-child {
+  text-align: right;
+}
+.user-table-container .user-table-body .user-table-wrapper table.user-table-data tbody tr td span.warning {
+  background-color: var(--color-bg-warning);
+  color: var(--color-warning);
+}
+.user-table-container .user-table-body .user-table-wrapper table.user-table-data tbody tr td span.success {
+  background-color: var(--color-bg-success);
+  color: var(--color-success);
+}
+.user-table-container .user-table-body .user-table-wrapper table.user-table-data tbody tr td span.danger {
+  background-color: var(--color-bg-danger);
+  color: var(--color-danger);
+}
+.user-table-container .user-table-body .user-table-wrapper table.user-table-data tbody tr td span.primary {
+  background-color: var(--color-bg-primary);
+  color: var(--color-primary);
+}
+.user-table-container .user-table-body .user-table-wrapper table.user-table-data tbody tr td span {
+  padding: 5px 10px;
+  border-radius: 10px;
+}/*# sourceMappingURL=userList.css.map */

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <%- include('../../partials/header/index.ejs') %>
+    
+    <h1> USER</h1>
+    <h2> User : <%=username %>
+    </h2>
+    <% if(num1 < num2){%>
+        <h2> true </h2>
+    <% } else {%>
+        <h2>false</h2>
+    <% } %>
+    <h1>arrayNumber</h1> 
+    <% for(let i = 0; i <= arrayNumber.length; i++){%>
+        <h2><%= arrayNumber[i] %></h2>
+  <%  } %>
+
+  <%- include('../../partials/footer/index.ejs') %>
+
+</body>
+
+</html>

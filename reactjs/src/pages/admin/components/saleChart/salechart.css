@@ -1,0 +1,20 @@
+.recharts-responsive-container .recharts-wrapper {
+  background-color: white;
+}
+
+.admin-home-container .sale-chart {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  height: 300px;
+  background-color: white;
+  padding: 30px 0;
+  border-radius: 15px;
+}
+.admin-home-container .sale-chart .title-container {
+  border-bottom: 1px solid gray;
+  margin-bottom: 30px;
+}
+.admin-home-container .sale-chart .title-container h2 {
+  padding: 0 30px;
+  margin-bottom: 30px;
+}/*# sourceMappingURL=salechart.css.map */

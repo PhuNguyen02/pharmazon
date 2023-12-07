@@ -1,0 +1,21 @@
+version: "1"
+volumes:
+  example-vendor:
+  example-node_modules:
+
+services:
+  # Application Server
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: root
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      TZ: "Asia/Tokyo"
+    ports:
+      - 42333:3306
+    container_name: "mysql5.7_RA"
+    volumes:
+      - "./data/db/mysql/data:/var/lib/mysql"
+      - "./data/db/mysql/my.cnf:/etc/mysql/conf.d/my.cnf"

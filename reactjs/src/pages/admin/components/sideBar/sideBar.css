@@ -1,0 +1,63 @@
+aside {
+  background-color: var(--color-background-dark);
+}
+aside .sidebar-container {
+  position: sticky;
+  top: 1.4rem;
+}
+aside .sidebar-container .top {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.4rem;
+}
+aside .sidebar-container .top .logo {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 10px;
+}
+aside .sidebar-container .top .logo img {
+  width: 2rem;
+  height: 2rem;
+}
+aside .sidebar-container .top .logo h2 {
+  color: white;
+  margin-bottom: 50px;
+}
+aside .sidebar-container .top .close {
+  display: none;
+}
+aside .sidebar-container .sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+aside .sidebar-container .sidebar a {
+  display: flex;
+  color: var(--color-info-dark);
+  margin-left: 2rem;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+  height: 3.7rem;
+  transition: all 300ms ease;
+}
+aside .sidebar-container .sidebar a:hover {
+  color: var(--color-primary);
+}
+aside .sidebar-container .sidebar a:hover .material-symbols-sharp {
+  margin-left: 1rem;
+}
+aside .sidebar-container .sidebar a .material-symbols-sharp {
+  font-size: 1.6rem;
+  transition: all 300ms ease;
+}
+aside .sidebar-container .sidebar a h3 {
+  font-weight: 500;
+}
+aside .sidebar-container .sidebar .footer-sidebar {
+  width: 100%;
+  bottom: 10px;
+  border-top: 1px solid gray;
+}/*# sourceMappingURL=sideBar.css.map */

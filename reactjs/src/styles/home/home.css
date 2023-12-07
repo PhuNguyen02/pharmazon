@@ -1,0 +1,162 @@
+
+.body-container .wrapper .heading-container {
+    padding: 20px 100px;
+    background: linear-gradient(rgb(246, 247, 251) 0%, rgb(236, 241, 248) 100%);
+  }
+  .body-container .wrapper .heading-container .main-container .header-main {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 15px;
+  }
+  .body-container .wrapper .heading-container .main-container .header-main .header-main-rightside {
+    height: 100%;
+  }
+  .body-container .wrapper .heading-container .main-container .header-main .header-main-rightside .symptom-link {
+    height: 50%;
+  }
+  .body-container .wrapper .heading-container .main-container .header-main .header-main-rightside .symptom-link a img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  .body-container .wrapper .heading-container .main-container .header-main .header-main-rightside .quick-access {
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+  }
+  .body-container .wrapper .heading-container .main-container .header-main .header-main-rightside .quick-access .item-suggest {
+    height: 100%;
+    margin-top: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 17px 11px;
+    max-height: 114px;
+    text-align: center;
+    color: black;
+    font-weight: 550;
+    border-radius: 15px;
+  }
+  .body-container .wrapper .product-list-container .health-checkup-container {
+    padding: 20px 100px;
+    position: relative;
+    background: linear-gradient(rgb(253, 246, 238) 0%, rgb(255, 254, 253) 100%);
+  }
+  .body-container .wrapper .product-list-container .health-checkup-container .health-checkup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-image: url("../../assets/img/Kiem_tra_suc_khoe-bg.webp");
+  }
+  .body-container .wrapper .product-list-container .health-checkup-container .health-checkup .health-check-left-content {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .body-container .wrapper .product-list-container .health-checkup-container .health-checkup .health-check-left-content .health-check-header h2 {
+    font-size: 30px;
+    color: white;
+  }
+  .body-container .wrapper .product-list-container .health-checkup-container .health-checkup .health-check-left-content .check-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+  }
+  .body-container .wrapper .product-list-container .health-checkup-container .health-checkup .health-check-left-content .check-item .check-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .body-container .wrapper .product-list-container .health-checkup-container .health-checkup .health-check-left-content .check-item .check-card img {
+    margin-right: 10px;
+  }
+  .body-container .wrapper .product-list-container .health-checkup-container .health-checkup .health-check-left-content .check-item .check-card .health-check-content .health-check-name p {
+    font-weight: 600;
+  }
+  .body-container .wrapper .product-list-container .health-checkup-container .health-checkup .health-check-left-content .check-item .check-card .health-check-content .health-check-btn {
+    margin-top: 10px;
+  }
+  .body-container .wrapper .product-list-container .health-checkup-container .health-checkup .health-check-left-content .check-item .check-card .health-check-content .health-check-btn a {
+    color: rgb(0, 106, 255);
+    font-weight: 600;
+  }
+  .body-container .wrapper .product-list-container .brand-container {
+    margin-top: 50px;
+    padding: 20px 100px;
+    position: relative;
+    background: linear-gradient(180deg, white 0.49%, #F7FAFF 100%);
+  }
+  .body-container .wrapper .product-list-container .brand-container .brand-container-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .body-container .wrapper .product-list-container .brand-container .brand-container-header img {
+    margin-right: 10px;
+  }
+  .body-container .wrapper .product-list-container .brand-container .brand-container-header h2 {
+    font-size: 23px;
+  }
+  .body-container .wrapper .product-list-container .brand-container .brand-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid gainsboro;
+  }
+  .body-container .wrapper .product-list-container .feature-category-container {
+    padding: 20px 100px;
+    background: linear-gradient(180deg, white 0%, #F9FBFF 0%, #E5EEFF 30.22%);
+  }
+  .body-container .wrapper .product-list-container .feature-category-container .feature-category-header {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .body-container .wrapper .product-list-container .feature-category-container .feature-category-header img {
+    margin-right: 10px;
+  }
+  .body-container .wrapper .product-list-container .feature-category-container .feature-category-header h2 {
+    font-size: 23px;
+  }
+  .body-container .wrapper .product-list-container .feature-category-container .category-list {
+    margin-top: 30px;
+    margin-bottom: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  .body-container .wrapper .product-list-container .feature-category-container .category-list .category-item {
+    padding: 20px;
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+  }
+  .body-container .wrapper .product-list-container .feature-category-container .category-list .category-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .body-container .wrapper .product-list-container .feature-category-container .category-list .category-item a .item-img {
+    margin-bottom: 10px;
+  }
+  .body-container .wrapper .product-list-container .feature-category-container .category-list .category-item a .category-name {
+    margin-bottom: 10px;
+  }
+  .body-container .wrapper .product-list-container .feature-category-container .category-list .category-item a .category-name p {
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .body-container .wrapper .product-list-container .feature-category-container .category-list .category-item a .quantity-product p {
+    color: gray;
+  }
+  .body-container .wrapper .product-list-container .feature-category-container .category-list .category-item a:hover {
+    opacity: 0.7;
+  }
