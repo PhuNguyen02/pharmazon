@@ -1,1 +1,72 @@
-:root{--color-primary: #7380ec;--color-bg-primary: #E9F3FF;--color-danger: #ff7782;--color-bg-danger: #FFEEF3;--color-success: #41f1b6;--color-bg-success: #DFFFEA;--color-warning: #ffbb55;--color-bg-warning: #FFF8DD;--color-background: white;--color-info-dark: #d7dadd;--color-dark-variant: #677483}.product-order-table-container{padding:20px;border-radius:15px;background-color:var(--color-background);width:100%;margin-top:30px}.product-order-table-container .product-order-table-header{width:100%;display:flex;justify-content:space-between;flex-wrap:wrap;align-items:stretch;padding:0 30px}.product-order-table-container .product-order-table-body .poduct-order-table-wrapper table.poduct-order-table-data{border-spacing:0;width:100%}.product-order-table-container .product-order-table-body .poduct-order-table-wrapper table.poduct-order-table-data thead tr th{padding:15px;text-align:center;color:var(--color-dark-variant)}.product-order-table-container .product-order-table-body .poduct-order-table-wrapper table.poduct-order-table-data thead tr th:last-child{text-align:right}.product-order-table-container .product-order-table-body .poduct-order-table-wrapper table.poduct-order-table-data tbody tr.even td{background-color:var(--color-info-dark)}.product-order-table-container .product-order-table-body .poduct-order-table-wrapper table.poduct-order-table-data tbody tr td{padding:15px;text-align:center;font-weight:600}.product-order-table-container .product-order-table-body .poduct-order-table-wrapper table.poduct-order-table-data tbody tr td:last-child{text-align:right}.product-order-table-container .product-order-table-body .poduct-order-table-wrapper table.poduct-order-table-data tbody tr td span.warning{background-color:var(--color-bg-warning);color:var(--color-warning)}.product-order-table-container .product-order-table-body .poduct-order-table-wrapper table.poduct-order-table-data tbody tr td span.success{background-color:var(--color-bg-success);color:var(--color-success)}.product-order-table-container .product-order-table-body .poduct-order-table-wrapper table.poduct-order-table-data tbody tr td span.danger{background-color:var(--color-bg-danger);color:var(--color-danger)}.product-order-table-container .product-order-table-body .poduct-order-table-wrapper table.poduct-order-table-data tbody tr td span.primary{background-color:var(--color-bg-primary);color:var(--color-primary)}.product-order-table-container .product-order-table-body .poduct-order-table-wrapper table.poduct-order-table-data tbody tr td span{padding:5px 10px;border-radius:10px}
+:root {
+  --color-primary: #7380ec;
+  --color-bg-primary: #E9F3FF;
+  --color-danger: #ff7782;
+  --color-bg-danger: #FFEEF3;
+  --color-success: #41f1b6;
+  --color-bg-success: #DFFFEA;
+  --color-warning: #ffbb55;
+  --color-bg-warning: #FFF8DD;
+  --color-background: white;
+  --color-info-dark: #d7dadd;
+  --color-dark-variant: #677483;
+}
+
+.product-order-table-container {
+  padding: 20px;
+  border-radius: 15px;
+  background-color: var(--color-background);
+  width: 100%;
+  margin-top: 30px;
+}
+.product-order-table-container .product-order-table-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding: 0 30px;
+}
+.product-order-table-container .product-order-table-body .poduct-order-table-wrapper table.poduct-order-table-data {
+  border-spacing: 0;
+  width: 100%;
+}
+.product-order-table-container .product-order-table-body .poduct-order-table-wrapper table.poduct-order-table-data thead tr th {
+  padding: 15px;
+  text-align: center;
+  color: var(--color-dark-variant);
+}
+.product-order-table-container .product-order-table-body .poduct-order-table-wrapper table.poduct-order-table-data thead tr th:last-child {
+  text-align: right;
+}
+.product-order-table-container .product-order-table-body .poduct-order-table-wrapper table.poduct-order-table-data tbody tr.even td {
+  background-color: var(--color-info-dark);
+}
+.product-order-table-container .product-order-table-body .poduct-order-table-wrapper table.poduct-order-table-data tbody tr td {
+  padding: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+.product-order-table-container .product-order-table-body .poduct-order-table-wrapper table.poduct-order-table-data tbody tr td:last-child {
+  text-align: right;
+}
+.product-order-table-container .product-order-table-body .poduct-order-table-wrapper table.poduct-order-table-data tbody tr td span.warning {
+  background-color: var(--color-bg-warning);
+  color: var(--color-warning);
+}
+.product-order-table-container .product-order-table-body .poduct-order-table-wrapper table.poduct-order-table-data tbody tr td span.success {
+  background-color: var(--color-bg-success);
+  color: var(--color-success);
+}
+.product-order-table-container .product-order-table-body .poduct-order-table-wrapper table.poduct-order-table-data tbody tr td span.danger {
+  background-color: var(--color-bg-danger);
+  color: var(--color-danger);
+}
+.product-order-table-container .product-order-table-body .poduct-order-table-wrapper table.poduct-order-table-data tbody tr td span.primary {
+  background-color: var(--color-bg-primary);
+  color: var(--color-primary);
+}
+.product-order-table-container .product-order-table-body .poduct-order-table-wrapper table.poduct-order-table-data tbody tr td span {
+  padding: 5px 10px;
+  border-radius: 10px;
+}/*# sourceMappingURL=productTable.css.map */

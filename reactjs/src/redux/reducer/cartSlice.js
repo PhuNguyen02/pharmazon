@@ -9,10 +9,20 @@ const CartSlice = createSlice({
   reducers: {
     addToCart(state, action)  {   
       state.cartItems.push(action.payload)
-    
-      console.log("stateee",state)
     }
   },
+  extraReducers: (builder) => {
+    // builder
+    //     .addCase(fetchProductById.fulfilled, (state, action) => {
+    //         state.cartItems = action.payload
+    //     })
+    //     .addCase(fetchProductById.rejected, (state, action) => {
+    //         state.errorMessage = action.payload
+    //     })
+    //     .addCase(fetchProductById.pending, (state) => {
+    //         state.isLoading = true
+    //     })
+}
 })
 const {actions, reducer} = CartSlice
 export const {addToCart} = actions

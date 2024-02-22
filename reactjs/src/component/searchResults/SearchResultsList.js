@@ -1,5 +1,6 @@
 import React from 'react';
 import "./searchResults.css"
+
 const SearchResultsList = ({ results }) => {
     return (
         <div className="results-list">

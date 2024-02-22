@@ -15,7 +15,7 @@
   left: 50%;
   transform: translateX(-50%);
   font-size: 18px;
-  top: -2px;
+  top: -20px;
   color: white;
 }
 .best-seller-container .best-seller-list {
@@ -58,6 +58,7 @@
   font-weight: 600;
   line-height: 20px;
   font-size: 14px;
+  text-decoration: none;
 }
 .best-seller-container .best-seller-list .best-seller-product-card .best-seller-product-content .product-price {
   margin-bottom: 30px;

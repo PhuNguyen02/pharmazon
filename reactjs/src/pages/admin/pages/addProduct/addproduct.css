@@ -1,0 +1,87 @@
+.admin-home-container {
+  height: 100vh;
+}
+.admin-home-container .add-product-container {
+  height: 80vh;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.admin-home-container .add-product-container .add-product-card-general {
+  border: 1px solid black;
+  width: 50%;
+  background-color: white;
+  height: 80vh;
+}
+.admin-home-container .add-product-container .add-product-card-general .add-product-card-general-heading {
+  height: 50px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.admin-home-container .add-product-container .add-product-card-general .add-product-card-general-body {
+  padding: 20px;
+}
+.admin-home-container .add-product-container .add-product-card-general .add-product-card-general-body .add-product-card-general-body-form .card-general-group .card-general-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.admin-home-container .add-product-container .add-product-card-general .add-product-card-general-body .add-product-card-general-body-form .card-general-group .card-general-row .card-general-label {
+  font-size: 18px;
+}
+.admin-home-container .add-product-container .add-product-card-general .add-product-card-general-body .add-product-card-general-body-form .card-general-group .card-general-row .card-general-input {
+  border: 1px solid black;
+  width: 200px;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 18px;
+}
+.admin-home-container .add-product-container .add-product-card-general .add-product-card-general-body .add-product-card-general-body-form .card-general-group .card-general-row .card-general-select {
+  border: 1px solid black;
+  width: 200px;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 18px;
+}
+.admin-home-container .add-product-container .add-product-card-pricing {
+  border: 1px solid black;
+  width: 45%;
+  background-color: white;
+  height: 80vh;
+}
+.admin-home-container .add-product-container .add-product-card-pricing .add-product-card-pricing-heading {
+  height: 50px;
+  background-color: aqua;
+}
+.admin-home-container .add-product-container .add-product-card-pricing .add-product-card-pricing-body {
+  padding: 20px;
+}
+.admin-home-container .add-product-container .add-product-card-pricing .add-product-card-pricing-body .add-product-card-pricing-body-form .card-pricing-group .card-pricing-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.admin-home-container .add-product-container .add-product-card-pricing .add-product-card-pricing-body .add-product-card-pricing-body-form .card-pricing-group .card-pricing-row .card-pricing-label {
+  font-size: 18px;
+}
+.admin-home-container .add-product-container .add-product-card-pricing .add-product-card-pricing-body .add-product-card-pricing-body-form .card-pricing-group .card-pricing-row .card-pricing-input {
+  border: 1px solid black;
+  width: 200px;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 18px;
+}
+.admin-home-container .add-btn {
+  background-color: aquamarine;
+  padding: 10px 20px;
+  color: black;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  float: right;
+}/*# sourceMappingURL=addproduct.css.map */

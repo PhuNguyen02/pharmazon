@@ -1,6 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { useNavigate } from "react-router-dom";
+import { fetchUserList } from '../../../../redux/api/userAPI';
 import './userList.css'
 const UserList = () => {
+    const navigate = useNavigate();
+    const dispatch = useDispatch()
+    const users = useSelector(state => state.auth)
+    console.log(users);
+    useEffect(()=> {
+        dispatch(fetchUserList())
+    },[])
     return (
         <>
         <div className='user-table-container'>
@@ -18,68 +28,20 @@ const UserList = () => {
                                 </tr>
                             </thead>
                             <tbody>
+                            {users?.userData?.data?.map((item) =>( 
                                 <tr className='odd'>
-                                    <td>phunguyen0212</td>
-                                    <td>haiphu95.pdp@gmail.com</td>
-                                    <td>admin</td>
-                                    <td>12/4/2023</td>
+                                    <td>{item.full_name}</td>
+                                    <td>{item.email}</td>
+                                    <td>{item.role}</td>
+                                    <td>{item.created_on}</td>
                                     <td>
-                                        <span className='success'>Đang hoạt động</span>
+                                        <span className='success'>{item.status}</span>
                                     </td>
                                     <td>Xoá/ sửa</td>
                                 </tr>
-                                <tr className='even'>
-                                <td>phunguyen0212</td>
-                                    <td>haiphu95.pdp@gmail.com</td>
-                                    <td>admin</td>
-                                    <td>12/4/2023</td>
-                                    <td>
-                                        <span className='success'>Đang hoạt động</span>
-                                    </td>
-                                    <td>Xoá/ sửa</td>
-                                </tr>
-                                <tr className='odd'>
-                                <td>phunguyen0212</td>
-                                    <td>haiphu95.pdp@gmail.com</td>
-                                    <td>admin</td>
-                                    <td>12/4/2023</td>
-                                    <td>
-                                        <span className='success'>Đang hoạt động</span>
-                                    </td>
-                                    <td>Xoá/ sửa</td>
-                                </tr>
-                                <tr className='even'>
-                                <td>phunguyen0212</td>
-                                    <td>haiphu95.pdp@gmail.com</td>
-                                    <td>admin</td>
-                                    <td>12/4/2023</td>
-                                    <td>
-                                        <span className='success'>Đang hoạt động</span>
-                                    </td>
-                                    <td>Xoá/ sửa</td>
-                                </tr>
-                                <tr className='odd'>
-                                <td>phunguyen0212</td>
-                                    <td>haiphu95.pdp@gmail.com</td>
-                                    <td>admin</td>
-                                    <td>12/4/2023</td>
-                                    <td>
-                                        <span className='success'>Đang hoạt động</span>
-                                    </td>
-                                    <td>Xoá/ sửa</td>
-                                </tr>
-                                <tr className='even'>
-                                <td>phunguyen0212</td>
-                                    <td>haiphu95.pdp@gmail.com</td>
-                                    <td>admin</td>
-                                    <td>12/4/2023</td>
-                                    <td>
-                                        <span className='success'>Đang hoạt động</span>
-                                    </td>
-                                    <td>Xoá/ sửa</td>
-                                    </tr>
-                                <tr className='odd'></tr>
-
+                            ))}
+                                
+                          
                             </tbody>
                         </table>
                     </div>

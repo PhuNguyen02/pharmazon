@@ -59,27 +59,28 @@ header .header-wrapper .right-side .login i {
 }
 header .header-wrapper .right-side .login a {
   color: white;
+  text-decoration: none;
 }
 .avatar {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.avatar:hover .logout {
+.login:hover .logout {
   transform: scale(1);
   transition: 0.1s ease-out ;
 }
-.avatar img {
+/* .avatar img {
   cursor: pointer;
   height: 30px;
   width: 30px;
   border-radius: 50%;
   filter: brightness(0);
-}
-.avatar .logout {
+} */
+.logout {
   transform: scale(0);
   position: absolute;
-  bottom: -30px;
+  bottom: -39px;
   border: 1px solid gray;
 }
 .logout {
@@ -88,8 +89,11 @@ header .header-wrapper .right-side .login a {
   padding: 5px 10px;
 }
 .logout a {
-  color: black;
-}.logout a {
+  color: black !important;
+  font-size: 15px;
+  text-decoration: none !important;
+}
+.logout a {
   color: black;
   margin-bottom: 5px;
 }

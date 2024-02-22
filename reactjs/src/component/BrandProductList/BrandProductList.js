@@ -15,7 +15,9 @@ const BrandProductlist = (props) => {
       category: "vitamin"
     }
     dispatch(fetchProductListCategory(params))
-},[])
+},[]);
+
+  
   return (
     <>
       {topBrands?.categoryProductData?.products?.map((item) => (

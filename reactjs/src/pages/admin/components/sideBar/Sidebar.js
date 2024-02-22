@@ -1,5 +1,6 @@
 import React from 'react';
 import './sideBar.css'
+import { Link } from 'react-router-dom';
 const Sidebar = () => {
     return (
         <>
@@ -16,22 +17,19 @@ const Sidebar = () => {
                     </div>
                 </div>
                 <div className="sidebar">
-                    <a href="">
-             
-                        <h3>Trang chủ</h3>
-                    </a>
-                    <a href="">
-
-                        <h3>Quản lý người dùng</h3>
-                    </a>
+                    <Link to="/admin">    
+                    <h3>Trang chủ</h3>
+                    </Link>
+                    <Link to="/admin/users">    
+                    <h3>Quản lý người dùng</h3>
+                    </Link>
                     <a href="#">
                        
                         <h3>Quản lý dược sĩ</h3>
                     </a>
-                    <a href="#">
-                       
-                        <h3>Quản lý sản phẩm</h3>
-                    </a>
+                    <Link to="/admin/products">    
+                    <h3>Quản lý sản phẩm</h3>
+                    </Link>
                     <a href="#">
                        
                         <h3>Quản lý giao diện</h3>

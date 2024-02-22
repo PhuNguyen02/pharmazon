@@ -15,6 +15,8 @@ import AdminNavBar from "../../pages/admin/components/navBar/AdminNavBar";
 import AdminUsersPage from "../../pages/admin/pages/users/adminUsersPage";
 import Productlist from "../../component/Productlist/Productlist";
 import AdminProductsList from "../../pages/admin/pages/product/AdminProductsList";
+import AddProduct from "../../pages/admin/pages/addProduct/AddProduct";
+import RegisterScreen from "../../pages/login-reg/RegisterScreen";
 const renderUserRouter = () => {
     const userRouters = [
         {
@@ -26,7 +28,7 @@ const renderUserRouter = () => {
             component: <ProductDetail />
         },
         {
-            path:"danh-muc-san-pham/:link",
+            path:"/danh-muc-san-pham/:link",
             component:<CategoryPage/>
         },
         {
@@ -46,10 +48,16 @@ const renderUserRouter = () => {
         {
             path:"/admin/products",
             component: <AdminProductsList/>
-        }
+        },
+        {
+            path:"/admin/addproduct",
+            component:<AddProduct/>
+        },
+        
     ]
     return (
         <Routes>
+            
             <Route path="/" element={
                 <>
                     <Header />
@@ -74,6 +82,7 @@ const renderUserRouter = () => {
             <Route path="/them-vao-gio-hang" element={<Cart/>}/>
             </Route>
             <Route path="/dangnhap" element={<LoginRegister/>}/>
+            <Route path="/dangky" element={<RegisterScreen/>}/>
             <Route path="/admin" element={
                 <div className="admin-container">
                 <Sidebar/>

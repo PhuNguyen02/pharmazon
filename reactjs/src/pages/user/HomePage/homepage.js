@@ -1,5 +1,4 @@
 import React from 'react';
-// import MasterLayout from '../theme/masterlayout/MasterLayout';
 import Banner from '../../../component/Banner/Banner';
 import Productlist from '../../../component/Productlist/Productlist';
 import BrandProductlist from '../../../component/BrandProductList/BrandProductList';

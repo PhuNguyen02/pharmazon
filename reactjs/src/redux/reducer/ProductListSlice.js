@@ -6,28 +6,23 @@ const productListSlice = createSlice({
   initialState:{
     productsData :[],
     categoryProductData :[],
+    filteredProducts :[],
+    sortingOption: "",
     isLoading: false,
     isSuccess: false,
-    errorMessage: '',
+    errorMessage: 'Lỗi',
   },
   reducers: {
-    addProduct (state, action){
-      state.push(action.payload)
-      console.log("state",state);
-    },
-    removeProduct (state, action){
-      state.splice(action.payload,1)
-    },
-    updateProduct(state, action) {
-      const indexProduct = current(state).findIndex(item => item.id !== action.payload.id)
-      if(indexProduct > -1) state[indexProduct] = action.payload
-    }
+      filterProducts: (state, action) => {
+        state.filteredProducts = action.payload === "all" ? state.productsData : state.productsData.filter((item) => item.category === action.payload)
+      },
+     
   },
   extraReducers: (builder) => {
     builder
     .addCase(fetchProductList.fulfilled, (state, action) => {
       state.productsData = action.payload
-      console.log("bcvvv",action);
+      state.push(action.payload)
     })
     .addCase(fetchProductList.rejected,(state, action)=> {
       state.errorMessage = action.payload
@@ -36,9 +31,7 @@ const productListSlice = createSlice({
       state.isLoading = true
     })
     .addCase(fetchProductListCategory.fulfilled, (state, action) => {
-        
       state.categoryProductData = action.payload
-      console.log("abc",action);
     })
     .addCase(fetchProductListCategory.rejected,(state, action)=> {
       state.errorMessage = action.payload
@@ -49,5 +42,5 @@ const productListSlice = createSlice({
   },
 })
 const {actions, reducer} = productListSlice
-export const {addProduct, removeProduct, updateProduct} = actions
+export const {} = actions
 export default reducer

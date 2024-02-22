@@ -8,7 +8,8 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                margin-top: 1.4rem;
+                margin-top: 35px;
+                height: 60px;
                 .logo {
                     display: flex;
                     gap: 0.8rem;
@@ -39,8 +40,9 @@
                     gap: 1rem;
                     align-items: center;
                     position: relative;
-                    height: 3.7rem;
+                    height: 55px;
                     transition: all 300ms ease;
+                    text-decoration: none;
                     &:hover {
                         color: var(--color-primary);
                     }
@@ -53,6 +55,7 @@
                         transition: all 300ms ease;
                     }
                     h3 {
+                        font-size: 15px;
                         font-weight: 500;
                     }
                 }

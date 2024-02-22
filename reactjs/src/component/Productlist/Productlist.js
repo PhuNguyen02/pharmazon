@@ -9,6 +9,7 @@ const Productlist = (props) => {
     const dispatch = useDispatch()
     const handleDetail = (product) => {
         navigate("sanpham/" + product.id + "/"+product.title)
+        console.log("loghandleclick",product);
     };
     useEffect(()=> {
         let  params= {

@@ -137,7 +137,6 @@ button.login-btn {
   transform: translateY(-50%);
 }
 .container .register-container {
-  transform: translateX(100%);
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -177,12 +176,13 @@ button.login-btn {
   align-items: center;
 }
 .container .register-container .register-form form input {
-  width: 100%;
+  width: 80%;
   height: 44px;
   border-radius: 24px;
   border: 1px solid black;
   /* margin-bottom: 32px; */
   padding: 12px;
+  margin-bottom: 20px;
 }
 .container .register-container .register-form form .button {
   display: flex;
@@ -196,7 +196,9 @@ button.login-btn {
 }
 .form-control{
   width: 50%;
-  height: 90px;
+  height: 90px !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 button.SignUp-btn {
   background: transparent;
@@ -206,8 +208,8 @@ button.SignUp-btn {
 .form-control input{
   width: 100%;
 }
-.form-control.error small{
-  color: rgb(228, 71, 19);
+.form-control .error small{
+  color: rgb(228, 71, 19) !important;
   margin-left: 20px;
 }
 .container .register-container .register-form form .button a {

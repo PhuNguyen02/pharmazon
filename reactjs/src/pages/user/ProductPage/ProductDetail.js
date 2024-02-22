@@ -3,33 +3,31 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import "../../../styles/detailProduct/detailproduct.css"
 import { addToCart } from '../../../redux/reducer/cartSlice';
+import { fetchProductById } from "../../../redux/api/productListAPI";
 const ProductDetail = () => {
-    let { id } = useParams();
-    const products = useSelector(state => state.producsList)
+    const { id } = useParams();
+    const product = useSelector(state => state.productDetail)
     const cart = useSelector(state => state.cart)
     const dispatch = useDispatch()
-    const [product, setProduct] = useState(null)
-    useEffect(() => {
-      if (id) {
-        const item = products.data?.find((x) => Number(x.id) === Number(id));
-        if (item) {
-            setProduct(item)
-        }
-      }
+    console.log("produccccc",product);
+    useEffect(() => {   
+            dispatch(fetchProductById(id))
     }, []);
     const handleAddtoCart = (product) => {
         dispatch(addToCart(product))
     }
+    const productData = product?.productData?.data
+    console.log("DetailProduct",productData);
     return (
         <div className="container">
             {
-                product && (
+                productData && (
                     <div className="detail-infomation">
                         <div className="detail-infomatio-left">
                             <div className="img-info-container">
                                 <div className="carasel-gallery">
                                     <div className="slider-gallery-area">
-                                        <img src={product.img} />
+                                        <img src={productData.img} />
                                     </div>
                                     <div className="button-area">
                                         <div className="previous-btn">
@@ -52,13 +50,13 @@ const ProductDetail = () => {
                             <div className="product-name">
                                 <span>
                                     <h3>
-                                        {product.title}
+                                        {productData.title}
                                     </h3>
                                 </span>
                             </div>
                             <div className="product-price">
                                 <span>
-                                    {product.price}
+                                    {productData.price}
                                 </span>
                                 <span> / </span>
                                 <span>Hộp</span>
@@ -69,7 +67,7 @@ const ProductDetail = () => {
                                         <td>Đơn vị tính</td>
                                         <td>
                                             <p>
-                                                {product.unit}
+                                                {productData.unit}
                                             </p>
                                         </td>
                                     </tr>
@@ -84,7 +82,7 @@ const ProductDetail = () => {
                                     <tr className="quantityOfUnit">
                                         <td>Quy cách</td>
                                         <td>
-                                            {product.quantityofunit}
+                                            {productData.quantityofunit}
                                         </td>
                                     </tr>
                                 </tbody>
@@ -97,7 +95,7 @@ const ProductDetail = () => {
                                     </div>
                                     <span className="quantityInStock">
                                         <p>
-                                            Hiện đang có {product.quantityOfStock} sản phẩm
+                                            Hiện đang có {productData.quantityOfStock} sản phẩm
                                         </p>
                                     </span>
                                 </div>
@@ -105,7 +103,7 @@ const ProductDetail = () => {
                             <div className="button-addtocart-Area">
                                 <div className="btn-addToCart">
                                     <button className="AddToCart-button" onClick={() => {
-                                        handleAddtoCart(product);
+                                        handleAddtoCart(productData);
                                     }}>
                                         Thêm vào giỏ hàng
                                     </button>

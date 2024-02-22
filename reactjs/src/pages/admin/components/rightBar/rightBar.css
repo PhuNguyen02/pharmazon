@@ -61,6 +61,7 @@
 }
 .right .right-bar-container .recent-updates h2 {
   margin-bottom: 0.8rem;
+  font-size: 25px;
 }
 .right .right-bar-container .recent-updates .updates {
   background-color: var(--color-white);
@@ -90,6 +91,7 @@
 }
 .right .right-bar-container .sales-analytics h2 {
   margin-bottom: 0.8rem;
+  font-size: 25px;
 }
 .right .right-bar-container .sales-analytics .online .icon {
   padding: 0.6rem;
