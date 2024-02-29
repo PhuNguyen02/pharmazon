@@ -8,22 +8,24 @@ import SaleChart from '../../components/saleChart/SaleChart';
 import ProductTable from '../../components/productTable/ProductTable';
 import RecentOrders from '../../components/recentOrder/RecentOrders';
 import Header from '../../components/header/Header';
+import UserList from '../../components/users/UserList';
 const AdminHomePage = () => {
+    console.log("hello");
     return (
         <div className='admin-home-container'>
             <Header title="Trang chủ"/>
-            <Arevage />
-            <div className='sale-chart'>
+            {/* <Arevage /> */}
+            {/* <div className='sale-chart'>
                 <div className='title-container'>
                     <h2>Báo cáo doanh thu</h2>
                 </div>
                 <SaleChart />
-            </div>
+            </div> */}
             <div className='product-order'>
-                <ProductTable />
+                <UserList/>
             </div>
-            <RevenueStatictis />
-            <RecentOrders/>
+            {/* <RevenueStatictis /> */}
+            {/* <RecentOrders/> */}
         </div>
     );
 };

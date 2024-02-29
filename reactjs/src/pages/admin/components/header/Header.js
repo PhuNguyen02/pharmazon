@@ -1,6 +1,5 @@
 import React from 'react';
 import { useEffect } from 'react';
-import './header.css'
 const Header = (props) => {
     useEffect(() => {
         window.addEventListener('scroll', isSticky);
@@ -16,10 +15,18 @@ const Header = (props) => {
     return (
         <>
             <div className='header-section-container'>
-            <h1 className='header-section'>{props.title}</h1>
+                <div className='header-section'>{props.title}</div>
+                <div className='header-info'>
+                    
+                    <div className='header-admin-name'>
+                        <div>xin chao Phu</div>
+                    </div>
+                    <div className='header-admin-avartar'>
+                        <img src='https://picsum.photos/40' />
+                    </div>
+                </div>
             </div>
-            </>
+        </>
     );
 };
-
 export default Header;

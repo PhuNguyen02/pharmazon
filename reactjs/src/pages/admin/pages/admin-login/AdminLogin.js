@@ -1,19 +1,18 @@
 import React, { useEffect, useRef, useState } from 'react';
-import "../../styles/login-register/loginReg.css"
+import "../../../../styles/login-register/loginReg.css"
 import { useDispatch, useSelector} from 'react-redux';
 import { useFormAction, useNavigate, useParams } from 'react-router-dom';
-import { loginUser } from '../../redux/api/userAPI';
-function LoginRegister() {
+import { loginUser } from '../../../../redux/api/userAPI';
+function AdminLogin() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const inputPsdRef = useRef()
   const inputusernameRef = useRef()
-  const [password, setPassword] = useState('')
   const initialValues = { username: "", password: "" };
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const userLogin =  useSelector(state => state.auth)
-  console.log(userLogin);
+  console.log("userLogin",userLogin);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
@@ -24,22 +23,31 @@ function LoginRegister() {
     if(formErrors.username == undefined && formErrors.password == undefined ){
       dispatch(loginUser(formValues)).then((result) => {
         if(result.payload) {
-          navigate('/')
+          console.log("resultPayload",result.payload);
+          const isAdmin = result.payload.data[0].role_name
+          console.log("isAdmin", isAdmin);
+          if(isAdmin === "admin") {
+            // navigate('/admin/')
+            window.location.reload()
+          }
+        } else {
+          console.log("k phải admin");
+          setFormErrors(validate(formValues));
         }
       })
     }
   }
-
   const validate = (values) => {
     const errors = {};
     if (!values.username) {
       errors.username = "username không được bỏ trống";
+    }  else if(userLogin.user.role_name !== 'admin') {
+      errors.username = "tài khoản admin không tồn tại";
     }
     if (!values.password) {
       errors.password = "Password không được bỏ trống";
-    } else if (values.password.length < 8 && values.password !== 'admin') {
-      errors.password = "Password phải trên 8 ký tự";
     }
+
     console.log(errors);
     return errors;
   };
@@ -112,4 +120,4 @@ function LoginRegister() {
   );
 }
 
-export default LoginRegister;
+export default AdminLogin;

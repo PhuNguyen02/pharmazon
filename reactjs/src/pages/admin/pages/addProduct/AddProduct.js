@@ -21,7 +21,7 @@ const AddProduct = () => {
     const inputDiscountRef = useRef()
     const inputSKURef = useRef()
     const inputquantityofstockRef = useRef()
-    const category = useSelector(state => state.categoryList)
+    const category = useSelector(state => state.categoryList)   
     console.log(category);
     useEffect(() => {
         if (!id) return;

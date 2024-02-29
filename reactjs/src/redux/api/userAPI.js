@@ -15,11 +15,10 @@ export const loginUser = createAsyncThunk(
     async(user) => {
         const response = await axios.post(URL_API + '/api/user/login', user)
         localStorage.setItem('user', JSON.stringify(response))
-        console.log(response.data);
+        console.log("loginuser",response.data);
         return response.data
     }
 )
-
 export const RegisterUser = createAsyncThunk(
     'auth/register',
     async(user) => {
@@ -27,14 +26,6 @@ export const RegisterUser = createAsyncThunk(
         return response.data
     }
 )
-// export const fetchUserById = createAsyncThunk(
-//     'userById/fetchAll',
-//     async (id) => {
-//         const response = await axios.get(URL_API+ `/api/user/${id}`)
-//         console.log(response.data);
-//         return response.data
-//     }
-// )
 export const createUser = createAsyncThunk(
     'user/addUser',
     async (user,thunkAPI) => {

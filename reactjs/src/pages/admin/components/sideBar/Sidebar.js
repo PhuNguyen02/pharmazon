@@ -8,9 +8,9 @@ const Sidebar = () => {
                 <div className='sidebar-container' >
                 <div className="top">
                     <div className="logo">
-                        <h2>
+                        <div className='admin-header-nav-title'>
                             <span className="danger">YourDoctor ADMIN</span>
-                        </h2>
+                        </div>
                     </div>
                     <div className="close" id="close-btn">
                         <span className="material-symbols-sharp">close</span>

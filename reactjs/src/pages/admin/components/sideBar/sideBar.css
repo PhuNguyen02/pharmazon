@@ -1,15 +1,14 @@
 aside {
-  background-color: var(--color-background-dark);
-}
-aside .sidebar-container {
+  background-color: #293042;
   position: sticky;
-  top: 1.4rem;
+  position: -webkit-sticky;
+  top: 0px;
 }
 aside .sidebar-container .top {
   margin-left: 10px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   margin-top: 35px;
   height: 60px;
 }
@@ -22,9 +21,10 @@ aside .sidebar-container .top .logo img {
   width: 2rem;
   height: 2rem;
 }
-aside .sidebar-container .top .logo h2 {
+aside .sidebar-container .top .logo .admin-header-nav-title {
   color: white;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 aside .sidebar-container .top .close {
   display: none;

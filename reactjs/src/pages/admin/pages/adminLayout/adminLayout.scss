@@ -48,6 +48,7 @@ body {
     gap: 30px;
     grid-template-columns: 1fr 3fr 1fr;
     background-color: #F1F1F2;
+    position: relative;
     // height: 100vh;
     .admin-home-container{
         z-index: 1;
@@ -57,9 +58,45 @@ body {
             height: 60px;
             width: 100%;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            flex-direction: row;
+            justify-content: space-around;
             z-index: 1;
           }
+          .header-section-container{
+            transition: all 1.0s;
+            margin-left: -30px;
+            // height: 60px;
+            width: 100%;
+            position: fixed;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+            background-color: white ;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 4px 0px;
+        .header-section{
+            margin-left: 30px !important;
+            width: 70%;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .header-info{
+            width: 35%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .header-admin-name{
+
+            }
+            .header-admin-avartar{
+                margin-left: 20px;
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
     }
 }

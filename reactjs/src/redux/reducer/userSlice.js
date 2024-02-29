@@ -1,14 +1,25 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { RegisterUser,fetchUserList,loginUser } from "../api/userAPI";
+import { RegisterUser, fetchUserList, loginUser } from "../api/userAPI";
 const authenSlice = createSlice({
-    name: 'auth',
     name: 'login',
     initialState: {
         userData: [],
-        user:[],
+        user: [],
+        isAuthenticated: false,
+        userRole: '',
         isLoading: false,
         isSuccess: false,
         errorMessage: '',
+    },
+    reducers: {
+        login: (state, action) => {
+            state.isAuthenticated = true;
+            state.userRole = action.payload.role;
+        },
+        logout: (state) => {
+            state.isAuthenticated = false;
+            state.userRole = '';
+        },
     },
     extraReducers: (builder) => {
         builder
@@ -26,9 +37,14 @@ const authenSlice = createSlice({
             .addCase(loginUser.fulfilled, (state, action) => {
                 state.isSuccess = true
                 state.user = action.payload
+                state.isAuthenticated = true;
+                state.userRole = action.payload.data[0].role_name;
             })
             .addCase(loginUser.rejected, (state, action) => {
                 state.errorMessage = action.payload
+                state.isAuthenticated = false;
+                state.userRole = '';
+
             })
             .addCase(loginUser.pending, (state) => {
                 state.isLoading = true
@@ -46,6 +62,6 @@ const authenSlice = createSlice({
     }
 })
 
-const {actions, reducer} = authenSlice
-export const {} = actions
+const { actions, reducer } = authenSlice
+export const { login, logout } = actions
 export default reducer

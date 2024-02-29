@@ -1,15 +1,17 @@
     aside {
-        background-color: var(--color-background-dark);
+        background-color: #293042;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0px;
         .sidebar-container {
-            position: sticky;
-            top: 1.4rem;
             .top {
                 margin-left: 10px;
                 display: flex;
-                align-items: center;
-                justify-content: space-between;
+                flex-direction: row;
+                justify-content: center;
                 margin-top: 35px;
                 height: 60px;
+
                 .logo {
                     display: flex;
                     gap: 0.8rem;
@@ -19,20 +21,27 @@
                         width: 2rem;
                         height: 2rem;
                     }
-                    h2 {
+
+                    .admin-header-nav-title {
                         color: white;
-                        margin-bottom: 50px;
+                        margin-bottom: 20px;
+                        font-size: 20px;
+
                     }
                 }
+
                 .close {
                     display: none;
+
                     .material-symbols-sharp {}
                 }
             }
+
             .sidebar {
                 display: flex;
                 flex-direction: column;
                 height: 100%;
+
                 a {
                     display: flex;
                     color: var(--color-info-dark);
@@ -43,9 +52,11 @@
                     height: 55px;
                     transition: all 300ms ease;
                     text-decoration: none;
+
                     &:hover {
                         color: var(--color-primary);
                     }
+
                     &:hover .material-symbols-sharp {
                         margin-left: 1rem;
                     }
@@ -54,11 +65,13 @@
                         font-size: 1.6rem;
                         transition: all 300ms ease;
                     }
+
                     h3 {
                         font-size: 15px;
                         font-weight: 500;
                     }
                 }
+
                 .footer-sidebar {
                     width: 100%;
                     bottom: 10px;
