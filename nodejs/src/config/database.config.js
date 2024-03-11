@@ -5,6 +5,7 @@ const connection = mysql.createConnection({
     user: 'root',
     database: 'your_pharma',
     port:'3308'
+    
 });
 
-module.exports = connection
+module.exports = connection 
